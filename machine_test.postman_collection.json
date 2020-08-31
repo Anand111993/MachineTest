@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "6420546f-f113-48f3-a1b6-7e22901c1646",
+		"name": "machine_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getRunningservices",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.8.128:8080/api/running/l3vpn",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"128"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"running",
+						"l3vpn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getl3vpnservices",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.8.128:8080/api/running/l3vpn",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"128"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"running",
+						"l3vpn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getl3vpndevice",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://192.168.8.128:8080/api/running/l3vpn/test/device",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"128"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"running",
+						"l3vpn",
+						"test",
+						"device"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getl3vpntestdeviceinterface",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+xml",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.8.128:8080/api/running/l3vpn/test/FastEthernetname",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"128"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"running",
+						"l3vpn",
+						"test",
+						"FastEthernetname"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutvlanId",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<vlanId>234</vlanId>"
+				},
+				"url": {
+					"raw": "http://192.168.8.128:8080/api/running/l3vpn/test/vlanId",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"128"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"running",
+						"l3vpn",
+						"test",
+						"vlanId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put ipAddress",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.yang.data+xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<address>192.168.1.3</address>"
+				},
+				"url": {
+					"raw": "http://192.168.8.128:8080/api/running/l3vpn/test/address",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"8",
+						"128"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"running",
+						"l3vpn",
+						"test",
+						"address"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "admin",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}
